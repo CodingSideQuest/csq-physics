@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>csq-physics</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+    <script type="module" src="/src/ui/ui.ts"></script>
+    
+    <canvas class="viewport"></canvas>
+
+    <div class="navigator">
+        <div class="tool-bar-container">
+            <div class="label">Tools</div>
+            <div class="tool-bar">
+                <button class="tool glass-container"></button>
+                <button class="tool glass-container"></button>
+                <button class="tool glass-container"></button>
+                <button class="tool glass-container"></button>
+                <button class="tool glass-container"></button>
+                <button class="tool glass-container"></button>
+                <button class="tool glass-container"></button>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="info-bar-container">
+            <div class="label">Info</div>
+            <div class="info-bar">
+                <button class="info-btn glass-container"><img class="performance" src="./src/assets/performance.png" alt=""></button>
+                <button class="info-btn glass-container"><img class="properties" src="./src/assets/properties.png" alt=""></button>
+                <button class="info-btn glass-container"></button>
+                <button class="info-btn glass-container"></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="info-container">
+        <div class="performance glass-container panel">
+            <section class="light">
+                <div class="title">Performance</div>
+            </section>
+
+            <section class="fps">
+                <div class="meter-wrapper">
+                    <img class="meter" src="./src/assets/fps-meter.png">
+                    <img class="tick" src="./src/assets/fps-tick.png" alt="">
+                    <div class="label">fps</div>
+                    <div class="fps-number">60</div>
+                </div>
+                <div class="breakdown-wrapper">
+                    <div class="row ball-count">
+                        <span class="label">Ball Count</span>
+                        <span class="value">0</span>
+                    </div>
+                    <div class="row simulation">
+                        <span class="label">Simulation</span>
+                        <span class="value">0</span>
+                        <span class="unit"> ms</span>
+                    </div>
+                    <div class="row render">
+                        <span class="label">Render</span>
+                        <span class="value">0</span>
+                        <span class="unit"> ms</span>
+                    </div>
+                    <div class="row total">
+                        <span class="label">Total</span>
+                        <span class="value">0</span>
+                        <span class="unit"> ms</span>
+                    </div>
+
+                </div>
+            </section>
+            <section class="graph"></section>
+        </div>
+        <div class="properties">
+            <div class="gravity glass-container panel">
+                <section class="light">
+                    <div class="title">Gravity</div>
+                </section>
+
+                <section class="gravity-settings">
+                    <div class="direction-wrapper">
+                        <div class="direction-interface">
+                            <div class="outer-circle">
+                                <button class="toggle">
+                                <button class="pointer"></button>
+                            </button></div>
+                        </div>
+                        <div class="label">Direction = <span class="direction-number">0 deg</span></div>
+                    </div>
+                    <div class="strength-wrapper">
+                        <div class="strength-interface">
+                            <button class="glass-container 1 active"></button>
+                            <button class="glass-container 2"></button>
+                            <button class="glass-container 3"></button>
+                            <button class="glass-container 4"></button>
+                            <button class="glass-container 5"></button>
+                            <button class="glass-container 6"></button>
+                            <button class="glass-container 7"></button>
+                            <button class="glass-container 8"></button>
+                            <button class="glass-container 9"></button>
+                            <button class="glass-container 10"></button>
+                            <button class="glass-container 11"></button>
+                            <button class="glass-container 12"></button>
+                            <button class="glass-container 13"></button>
+                            <button class="glass-container 14"></button>
+                            <button class="glass-container 15"></button>
+                            <button class="glass-container 16"></button>
+                            <button class="glass-container 17"></button>
+                            <button class="glass-container 18"></button>
+                            <button class="glass-container 19"></button>
+                            <button class="glass-container 20"></button>
+                            <button class="glass-container 21"></button>
+                            <button class="glass-container 22"></button>
+                            <button class="glass-container 23"></button>
+                            <button class="glass-container 24"></button>
+                            <button class="glass-container 25"></button>
+                        </div>
+                        <div class="label">Strength = <span class="strength-number">0</span></div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>
