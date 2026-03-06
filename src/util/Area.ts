@@ -22,15 +22,7 @@ export class Area {
     }
 
     public intersectsCircle(x: number, y: number, r: number): boolean {
-        //r *= 2
-
-        /*return this.containsPoint(x, y)
-            || (this.containsX(x) && (this.containsY(y + r) || this.containsY(y - r)))
-            || (this.containsY(y) && (this.containsX(x + r) || this.containsX(x - r)))
-            || ((x - this.getWest()) ** 2 + (y - this.getSouth()) ** 2 < r)
-            || ((x - this.getWest()) ** 2 + (y - this.getNorth()) ** 2 < r)
-            || ((x - this.getEast()) ** 2 + (y - this.getSouth()) ** 2 < r)
-            || ((x - this.getEast()) ** 2 + (y - this.getNorth()) ** 2 < r)*/
+        
         if (this.containsPoint(x, y)) return true
         if (this.containsX(x) && (this.containsY(y + r) || this.containsY(y - r))) return true
         if (this.containsY(y) && (this.containsX(x + r) || this.containsX(x - r))) return true

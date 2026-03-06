@@ -34,6 +34,7 @@ export class Engine {
         await this.renderer.init()
 
         /*
+        QUICK TESTING PURPOSES
         // A
         this.ballStore.createBall({
             x: -100,

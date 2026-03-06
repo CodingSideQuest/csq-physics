@@ -4,7 +4,6 @@ import { Ball } from "../Ball";
 
 class Cell extends Area {
 
-    private index = 0
     private balls: Array<Ball> = []
 
     constructor(area: Area) {
@@ -13,33 +12,11 @@ class Cell extends Area {
 
     public add(ball: Ball) {
         this.balls.push(ball)
-        /*for (let i = 0; i < this.index; ++i) {
-            if (this.balls[i].getIndex() === ball.getIndex()) {
-                return
-            }
-        }
-
-        if (this.index >= this.balls.length) {
-            this.balls.push(ball)
-            this.index++
-        } else {
-            this.balls[this.index++] = ball
-        }*/
     }
 
     public clear() {
         if (this.balls.length)
             this.balls = []
-        /*
-        let newIndex = 0
-        for (let i = 0; i < this.index; ++i) {
-            const ball = this.balls[i]
-            if (this.intersectsCircle(ball.getX(), ball.getY(), ball.getRadius())) {
-                this.balls[newIndex++] = ball
-            }
-        }
-
-        this.index = newIndex*/
     }
 
     public ballCount(): number {

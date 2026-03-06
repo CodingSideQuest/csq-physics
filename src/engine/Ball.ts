@@ -22,7 +22,6 @@ export class Ball {
 
     public getMass(): number {
         return Math.PI * this.getRadius() ** 2
-        // return this.getRadius() / 10
     }
 
     public getIndex(): number {
