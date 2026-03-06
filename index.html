@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>csq-physics</title>
+    <script type="module" crossorigin src="/csq-physics/assets/index-qvsQa2aM.js"></script>
+    <link rel="stylesheet" crossorigin href="/csq-physics/assets/index-GqOptoi2.css">
+  </head>
+  <body>
+    <div id="app"></div>
+    
+    <canvas class="viewport"></canvas>
+
+    <div class="navigator">
+        <div class="tool-bar-container">
+            <div class="label">Tools</div>
+            <div class="tool-bar">
+                <button class="tool glass-container"></button>
+                <button class="tool glass-container"></button>
+                <button class="tool glass-container"></button>
+                <button class="tool glass-container"></button>
+                <button class="tool glass-container"></button>
+                <button class="tool glass-container"></button>
+                <button class="tool glass-container"></button>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="info-bar-container">
+            <div class="label">Info</div>
+            <div class="info-bar">
+                <button class="info-btn glass-container"><img class="performance" src="data:image/png;base64,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" alt=""></button>
+                <button class="info-btn glass-container"><img class="properties" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAE3ElEQVR4AeybAY7TMBBFHeAg5SS0EiBxi/YkLSdp9xRIgNRyki33AMr7kVNix02c1ElcLavMOk7szPw/47Gd7L4yL/znPwEvPADMQ0XAV3NZfzeXveSbuRyt7CiXX8xlMcSZ2RMAuB3AnykvhTH7izFrCWCXVraUxzfGqM2O815HtgQAeCngoNkCfJB36dt5ZEkA4I9YfuwDnKg4/zLmYHr+ZEeABa/wjoYi8JC1+WSKc3Qn2zArAu4B/8EUJ4upV5ENAYBXAhvk+aHgxVQWBNgpTNlcNkVJFfb3gJeiLAhgClvLmFhJBV76Ziegr/eHgJcOLZ6YVhtEz04A3o+e44eCR8czfdcFCymRIc9XMjsBGBKV+ABwBsCmz5gXWIFHx/V4bYyjLwcC3pmIH8A/3QteanyZnQA8u/CNCtVpF73ICXm+eiaAHcKpV7fmKfFsFAFYtxUwytZDbfywr3eASEff7ATUjWs7F1EAa2Txep8u8PW21fnDEGAN3toVo63+K2LBQ6QzlB6NACHeak4XYFUkOic6nnXeJQyBn/U2sxIgw+vGxJ4DYs10dtTCRhILXs/3t8yzEgAIZ06WgbFCKC+QvSS2D8Sd/S3zrASg3JmSYoEMbQdZT35fbPAvTVNX+OOR1qye0hJ0nVlIacvtPHYWAgS+z7h1LB5YCXlfj5qcAAt+L+VTCeAPIe9L/6QEMIcvrecHJz8Z3VNO702xudVnMgI0XWGE3vZSTHac8PyqTdskBGjhQhhOGvaAXnWBp834n8YI+yMZeLJsD9EHFjtvAR/1lni0CFCyE3hYHm28Q6zW9SeB5lwvSwqN9/piB/2txygEADxZsqvAWa8WePYqH00hT68EmvPeX4XETHICUiU7PCrvXsH18aqAxUpSAlIlO4HHo/Ju1DiOBRtql4wAwj5JshN4wv7mvB0Ccc+1uwlInewEnnE+uucr0u4iAK8nS3YyCO8rk08GXjoHE5Aq2ckICZ4/MO4HZXL1HyqDCEiV7GpGt67Xa+2Sn/YmgLBPkuwqJIS99umt6/Wq7RhlNAGpk53ACDyhP1nGl05fogjA60mTXWWEwE+Z8Su99bKTgNTJrlKO9yfP+JXuetlKwAjJrtSN52fJ+KVy79dNAgj7pMmupne2jF+z4XoaJEDgaZF8G0vYz5rxwdQ4GgQAXq+ORwFP6I+e8RsIOy40CKB98K+15D1ko305bVaAOVDXlpVq90H7LJKeb6lDgPW+36asC4CWqtqXa+rSSwiuNb60lI29XxCVJXiZ6RCgCzdEb1dDm5TQNecRkJRNxncMsxWfgOC3OkAEQ53hELxun60iq4wvg3zxCfDvl/U/xgT/IaHt6y5hn13GL8F4vxwCbnma6wu+6Ky1H6j6ky+WXA++6xd47mWX8Svb66VDAJ7+Ub/pnW/xePlvKlohcu/mVx6BV6KkTfaHQ8BvY07y3i2rAbbg3pI2a8rgwb1sM37IYIcATXGAjJraQg+jb9YZP2SzQ4AaELo7vNiV3dXUl+wzvm+w6g0CdJGhsOpJgtYJs73Vkc1DJUiAhgKrvrcK6QgiPhM1DwlepAUJ0A2Jlrs2GjSladVXfoi0xCjZ6TudNk9q/pDSSoAQ2WjQn5iU39tFioQImfwVtuxJLZ0EpFaY2/MenoB7Cf0LAAD//+YvPQYAAAAGSURBVAMAWUl6kFrznzEAAAAASUVORK5CYII=" alt=""></button>
+                <button class="info-btn glass-container"></button>
+                <button class="info-btn glass-container"></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="info-container">
+        <div class="performance glass-container panel">
+            <section class="light">
+                <div class="title">Performance</div>
+            </section>
+
+            <section class="fps">
+                <div class="meter-wrapper">
+                    <img class="meter" src="/csq-physics/assets/fps-meter-BLfpix8i.png">
+                    <img class="tick" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEsAAABLCAYAAAA4TnrqAAADTElEQVR4Xu2ZzWpTQRTH40pQcOdD+ADuzHe4zaf5XoUs1NewiKDoK7gTFPoaFfQBigsLanHlyjZpY1KlJvH/DxOJJ01zm9wGZu75weFy75w5hzmZmfu/k0hEURRFUTZBs9m8XavVvvMq2xRBvV5/hmKNYM9lmzJDLpe7jmIdZzKZMa+8lz6KAQV6WCqV+tFodIzrAEvxkfRRDNVq9Vs6nR6zWLzyXvookcmsypTL5Z8s1NR4z+fSN/RgFr33PO9foWi8x0b/QfqGGhTqDooymC3U1Pic7bJPaEEx3mSz2TNZKBqe/0H7W9knlBgROojH43OFovE521WkRiYb+9NCoXDuEpxaPp8/pZ/sGyooOjFrOolEYq5As8Z2+HVDLVIbjcYDiM8TWZzzjH70lzFCA2bL16kIXWb0g/+BjBEKjAg9lkW5yCqVykkoRSrkwC5E50gW5CKjP2bXOxnLaYwI/e/Txq+hXz9UIhVL6TXE5i9ZCD+GN+Jv9pcxncSI0P4iEbrMjEjth0Kk4vX/BCLUl1xYZOjfYxwZ2ynMSejRMhG6zNifcZwWqUaEHsnBr2KM47RIxV7z2a8IXWbmJPWLzOEERoSeykGvY86KVMyqPXkSuq45eZKKAd2FXUqt+zXEHTolUrFU9rDHXEmx8EZkwXZlTitpt9s38cuP1pULi8ycdQ2R6prMbR14vdeKxWJHDjJI4x+zUPT3ZG7rwK++s7W1NZQDDNLwnTnEUn8lc1sHluB+KpWaG2CQxvjI81Hmtg5+lqz60ezXzMf1D5nbOlCss1gsNjfAoI15ZG7r2NTMYh6Z2zo2uGfty9zWsYm3IeMzj8xtHdRZ+IA+lAMM0hifeWRu66CC5zHwFSv4PvPI3FaCzfclVHxPDjQIY1zGlzmtpdVq3cKv3wl6o2c8xmV8mdNqsKeU8cbqBSUjGIfxGFfmcgLMgsc83Vy3YOzPOIwnczgFZsI2Z8SqS9JoKs6obRnbSTAj7mNT7nJz9jvL6Gc28y77y5hOw00ZA38BG5RKpUPP84bJZHJSlGlxeM/nbKcf/Z3bzC8DCnEDRahjae1gxnzi6QFuJ6cIvOdzttNP9lUURVEURVEURVEURVEURVEURVEURdk0fwGFz3kYtDz4WAAAAABJRU5ErkJggg==" alt="">
+                    <div class="label">fps</div>
+                    <div class="fps-number">60</div>
+                </div>
+                <div class="breakdown-wrapper">
+                    <div class="row ball-count">
+                        <span class="label">Ball Count</span>
+                        <span class="value">0</span>
+                    </div>
+                    <div class="row simulation">
+                        <span class="label">Simulation</span>
+                        <span class="value">0</span>
+                        <span class="unit"> ms</span>
+                    </div>
+                    <div class="row render">
+                        <span class="label">Render</span>
+                        <span class="value">0</span>
+                        <span class="unit"> ms</span>
+                    </div>
+                    <div class="row total">
+                        <span class="label">Total</span>
+                        <span class="value">0</span>
+                        <span class="unit"> ms</span>
+                    </div>
+
+                </div>
+            </section>
+            <section class="graph"></section>
+        </div>
+        <div class="properties">
+            <div class="gravity glass-container panel">
+                <section class="light">
+                    <div class="title">Gravity</div>
+                </section>
+
+                <section class="gravity-settings">
+                    <div class="direction-wrapper">
+                        <div class="direction-interface">
+                            <div class="outer-circle">
+                                <button class="toggle">
+                                <button class="pointer"></button>
+                            </button></div>
+                        </div>
+                        <div class="label">Direction = <span class="direction-number">0 deg</span></div>
+                    </div>
+                    <div class="strength-wrapper">
+                        <div class="strength-interface">
+                            <button class="glass-container 1 active"></button>
+                            <button class="glass-container 2"></button>
+                            <button class="glass-container 3"></button>
+                            <button class="glass-container 4"></button>
+                            <button class="glass-container 5"></button>
+                            <button class="glass-container 6"></button>
+                            <button class="glass-container 7"></button>
+                            <button class="glass-container 8"></button>
+                            <button class="glass-container 9"></button>
+                            <button class="glass-container 10"></button>
+                            <button class="glass-container 11"></button>
+                            <button class="glass-container 12"></button>
+                            <button class="glass-container 13"></button>
+                            <button class="glass-container 14"></button>
+                            <button class="glass-container 15"></button>
+                            <button class="glass-container 16"></button>
+                            <button class="glass-container 17"></button>
+                            <button class="glass-container 18"></button>
+                            <button class="glass-container 19"></button>
+                            <button class="glass-container 20"></button>
+                            <button class="glass-container 21"></button>
+                            <button class="glass-container 22"></button>
+                            <button class="glass-container 23"></button>
+                            <button class="glass-container 24"></button>
+                            <button class="glass-container 25"></button>
+                        </div>
+                        <div class="label">Strength = <span class="strength-number">0</span></div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>
